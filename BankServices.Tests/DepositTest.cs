@@ -16,7 +16,7 @@ namespace BankServices.Tests
         public void TestInitialize()
         {
             // Need to setup DataDirectory for test project
-            AppDomain.CurrentDomain.SetData("DataDirectory", Directory.GetCurrentDirectory().Replace("\\bin\\Debug", string.Empty) + "\\App_Data");
+            AppDomain.CurrentDomain.SetData("DataDirectory", Directory.GetCurrentDirectory().Replace(".Tests\\bin\\Debug", string.Empty) + "\\App_Data");
         }
 
         [TestMethod]
